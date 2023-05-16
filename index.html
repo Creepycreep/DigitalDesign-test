@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DigitalDesign TestTask</title>
+
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body class="body_light">
+  <header id="up" class="header header_color">
+    <div class="container header__container">
+      <div class="header__logo">
+        <a href="#">digital design <span>test</span></a>
+      </div>
+
+      <button id="btn_theme" class="btn-theme btn_light">
+        <span></span>
+      </button>
+
+      <button class="btn-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <a href="#up" class="btn-up btn-up_hide">&#10094;</a>
+    </div>
+
+    <nav class="header__nav nav_color nav_mobile">
+      <ul class="container">
+        <li class="nav__item icon_upper"><a href="#upper">Верх</a></li>
+        <li class="nav__item icon_lower"><a href="#lower">Низ</a></li>
+        <li class="nav__item icon_shoes"><a href="#shoes">Обувь</a></li>
+        <li class="nav__item icon_accessories"><a href="#accessories">Аксессуары</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="modal modal-hide">
+    <form class="modal-form" action="">
+      <button id="close" class="btn-close" type="reset">
+        <span></span>
+        <span></span>
+      </button>
+
+      <h4 class="form__heading"></h4>
+
+      <label for="amount" class="form__text">Введите количество товара: </label>
+      <input id="amount" class="form__amount" type="number" min="1" max="9999" name="amount" value="1">
+
+      <p class="form__text">Выберите цвет:</p>
+      <div class="colors">
+        <input class="radiobtn" type="radio" id="black" name="color">
+        <label for="black" class="form__radio black">Черный</label>
+
+        <input class="radiobtn" id="white" type="radio" name="color">
+        <label for="white" class="form__radio white"> Белый</label>
+
+        <input class="radiobtn" id="beige" type="radio" name="color">
+        <label for="beige" class="form__radio beige"> Бежевый</label>
+
+        <input class="radiobtn" id="gray" type="radio" name="color">
+        <label for="gray" class="form__radio gray"> Серый</label>
+      </div>
+
+      <p class="form__text">Комментарий:</p>
+      <textarea class="form__comment" name="text" id="" rows="5" maxlength="2000"></textarea>
+
+      <button type="reset" class="btn-buy btn-modal">Купить</button>
+    </form>
+  </div>
+
+  <main class="main">
+    <section id="greetings" class="greetings greetings_light">
+      <div class="container">
+        <h1 class="greeting__heading greeting__heading_color">стильная одежда для всех</h1>
+      </div>
+    </section>
+
+    <section id="upper" class="catalogue upper">
+      <div class="container">
+        <h2 class="catalogue__header icon_upper">верх</h2>
+
+        <div class="wrapper upper-wrapper">
+        </div>
+      </div>
+    </section>
+
+    <section id="lower" class="catalogue lower">
+      <div class="container">
+        <h2 class="catalogue__header icon_lower">низ</h2>
+
+        <div class="wrapper lower-wrapper">
+        </div>
+      </div>
+    </section>
+
+    <section id="shoes" class="catalogue ">
+      <div class="container">
+        <h2 class="catalogue__header icon_shoes">обувь</h2>
+
+        <div class="wrapper shoes-wrapper">
+        </div>
+      </div>
+    </section>
+
+    <section id="accessories" class="catalogue accessories">
+      <div class="container">
+        <h2 class="catalogue__header icon_accessories">Аксессуары</h2>
+
+        <div class="wrapper accessories-wrapper">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="upper-footer">
+        <nav class="footer__nav">
+          <ul>
+            <li class="nav__item f-icon_upper"><a href="#upper">Верх</a></li>
+            <li class="nav__item f-icon_lower"><a href="#lower">Низ</a></li>
+            <li class="nav__item f-icon_shoes"><a href="#shoes">Обувь</a></li>
+            <li class="nav__item f-icon_accessories"><a href="#accessories icon_accessories">Аксессуары</a></li>
+          </ul>
+        </nav>
+
+        <div class="contacts">
+          <ul>
+            <li class="icon_phone"><a href="tel:88005553535">88005553535</a></li>
+            <li class="icon_mail"><a href="mailto:example@mail.ru">example@mail.ru</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="lower-footer">
+        <p>© 2023. DigitalDesign Test. Все права защищены</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script/script.js"></script>
+</body>
+
+</html>
