@@ -828,7 +828,7 @@ input[type=radio]:checked+label {
   }
 
   h4 {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
   .header__logo {
@@ -849,31 +849,46 @@ input[type=radio]:checked+label {
 
 
   .modal-form {
-    padding: 30px 45px;
+    padding: 20px 45px;
+
+  }
+
+  .form__heading {
+    margin-bottom: 10px;
+    max-width: 90%;
   }
 
   .form__text {
-    font-size: 1.3em;
+    font-size: 0.9em;
   }
 
+  .form__amount {
+    font-size: 0.9em;
+  }
 
   .form__radio:before {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     outline: 2px solid var(--color-text);
     border: 3px solid var(--color-bg);
+    margin-right: 10px;
   }
-
-
 
   .colors {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 20px;
 
-    font-size: 1.2em;
+    font-size: 0.9em;
+  }
+
+  .form__comment {
+    font-size: 0.9em;
+
+    max-height: 100px;
   }
 
   .btn-modal {
+    margin: 20px auto 0;
     max-width: unset;
     width: 100%;
   }
@@ -881,6 +896,15 @@ input[type=radio]:checked+label {
   .btn-close {
     width: 30px;
     height: 30px;
+  }
+
+  .footer__nav {
+    font-size: 1em;
+    line-height: 2em;
+  }
+
+  .contacts {
+    font-size: 1em;
   }
 
 }
